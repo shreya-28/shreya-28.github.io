@@ -1,6 +1,6 @@
 title: SHREYA SHARMA
 description: > # this means to ignore newlines until "baseurl:"
-  I am a B.Tech student at IIT (BHU) Varanasi. My main area of research is 
+  I am a Bachelor's student at IIT (BHU) Varanasi. My main area of research is
   Applied Cryptography. My work addresses data privacy concerns and efficiency 
   in secure settings. 
 permalink: ':title/'
@@ -11,7 +11,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Shreya Sharma # add your name
 author-img: shreya.jpg # add your photo
-about-author: Pursuing B.Tech in ECE at IIT (BHU) Varanasi # add description
+about-author: Senior Undergrad in Electronics Engineering at IIT (BHU) Varanasi # add description
 social-twitter: # add your Twitter handle
 social-facebook:  # add your Facebook handle
 social-github: shreya-28 # add your Github handle
