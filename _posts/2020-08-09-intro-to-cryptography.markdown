@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro to Cryptography
+title: A guide to Cryptography for beginners
 date: 2020-08-09 00:00:00 +0300
 description: A collection of resources that can help you set your foot into the magical realm of cryptography # Add post description (optional)
 img: Crypto.jpg # Add image post (optional)
