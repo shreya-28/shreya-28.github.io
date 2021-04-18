@@ -1,0 +1,57 @@
+/* Global styles. */
+html, body, .viewport {
+  height: 100%;
+}
+
+.viewport {
+  min-width: 320px;
+}
+
+.content {
+  min-height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  line-height: 24px;
+}
+
+.content h1 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content article p {
+  margin: 20px 0;
+}
+
+/* Infobox. */
+.infobox {
+  display: flex;
+  align-items: center;
+}
+
+.infobox img {
+  min-width: 150px;
+  width: 33%;
+  max-width: 200px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.infobox .info {
+  margin: 10px;
+  line-height: 30px;
+}
+
+.infobox .info i {
+  margin-right: 10px;
+}
+
+.email {
+  font-family: monospace;
+}

@@ -1,19 +1,73 @@
----
-layout: main
----
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-  </div>
-</article>
-{% endfor %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- This code is intentionally left unobfuscated for the curious reader. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <title>shreya.dev</title>
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="content">
+        <h1>Shreya Sharma</h1>
+        <header class="infobox">
+          <img src="img/shreya.jpg" alt="A profile photo of Shreya Sharma">
+          <div class="info">
+            <p><i class="fas fa-location-arrow"></i>Varanasi, India</p>
+            <p class="email"><i class="fas fa-envelope"></i>shreyas.cd.ece17 at iitbhu.ac.in</p>
+            <p><i class="fab fa-github"></i><a href="//github.com/shreya-28">Github</a></p>
+            <p><i class="fab fa-linkedin"></i><a href="//linkedin.com/in/shreya-sharma-bb6203191">LinkedIn</a></p>
+          </div>
+        </header>
+        <article>
+          <p>Hello! I'm Shreya, a final year undergraduate student at Indian Institute
+          of Technology (BHU). I will be joining Microsoft India as a Software Developement
+          Engineer this summer. I am interested in secure systems that allow multiple parties to perform
+          decentralised computation without much overhead. </p>
+          </p>For my Bachelor’s Thesis, I collaborated with
+          <a href="https://www.encrypto.cs.tu-darmstadt.de/research_profile/index.en.jsp">
+          ENCRYPTO Group</a> at TU Darmstadt to build a framework for secure
+          multi-party computation (MPC) called <a href="https://github.com/Oleksandr-Tkachenko/MOTION">MOTION</a>.
+          We've used various technologies and design decisions to build MOTION in a user-friendly and extensible manner,
+          and I hope that it promotes adoption of MPC protocols in practice.</p>
+          
+          <p>In 2019, I interned at NTU Singapore to work on collaborative Deep Learning (DL). My task was to design
+          efficient protocols for federated learning on DL models while strengthening the security guarantees involved. Previously, I also worked with <a href="http://www.eng.biu.ac.il/hazay/">
+          Dr Carmit Hazay</a> at Bar Ilan University,
+          Israel to come up with mathematical constructs that make way for simpler protocols in MPC.</p>
+          
+          <h1>Publications</h1>
+          <p>
+          <ul style="list-style-type:square">
+            <li>Shreya Sharma, Chaoping Xing, Yang Liu, Yan Kang. <a href="https://ieeexplore.ieee.org/abstract/document/9006280">"Secure and Efficient Federated Transfer Learning"</a>. In 2019 IEEE International Conference on Big Data, Los Angeles, CA, USA (pp. 2569-2576). IEEE.</li>
+            <li>Shreya Sharma, Chaoping Xing, Yang Liu. "<a href="https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_3.pdf">Privacy-preserving deep learning with SPDZ</a>" The AAAI Workshop on Privacy-Preserving Artificial Intelligence 2020, New York, NY, USA. </li>
+          </ul>
+          </p>
+          <h1>Awards and Achievements</h1>
+          <p>
+          <ul style="list-style-type:square">
+            <li>Awarded the Google - Grace Hopper Celebration (GHC) Scholarship to attend GCH 2020.</li>
+            
+            <li>Awarded the DAAD-WISE scholarship 2020 by German Government for research at TU Darmstadt.</li>
+            
+            <li>Presented my work on secure Deep Learning at AAAI 2020. </li>
+            
+            <li>Selected for Microsoft - Codess Summer Mentorship Program 2019.</li>
+            
+            <li>Awarded the SPARK 2019 Scholarship by IIT Roorkee.</li>
 
-{% include pagination.html %}
+          </ul>
+          </p>
+        </article>
+        
+      </div>
+    </div>
+  </body>
+</html>

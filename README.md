@@ -1,14 +1,4 @@
-# Blog by Shreya Sharma
+# Portfolio 
 
-## Running locally
-
-```
-bundle install
-bundle exec jekyll serve
-```
-
-## Theme
-
-Modification of the Flexible-Jekyll jekyll theme.
-<https://github.com/artemsheludko/flexible-jekyll>
+This repository provides a simple design for personal website.
 
